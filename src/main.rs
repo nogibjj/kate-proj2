@@ -6,12 +6,11 @@ async fn hello() -> impl Responder {
     HttpResponse::Ok().body("What to eat for dinner?")
 }
 
-#[get("/food")]
+#[get("/meal")]
 async fn food() -> impl Responder {
     let meal = make_reqwest().await;
-    // print_dictionary(dictionary);
- //http response with mealname
-    HttpResponse::Ok().body(meal["mealname"].to_string())
+    // HttpResponse::Ok().body(meal["mealname"].to_string())
+    HttpResponse::Ok().json(meal)
 }
 
 #[actix_web::main]
@@ -20,6 +19,7 @@ async fn main() -> std::io::Result<()> {
     println!("Running the service");
     HttpServer::new(|| {
         App::new()
+            .service(hello)
             .service(food)
 
     })
