@@ -3,8 +3,9 @@ use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 
 #[get("/")]
 async fn hello() -> impl Responder {
-    HttpResponse::Ok().body("Hello World Random Food!")
+    HttpResponse::Ok().body("What to eat for dinner?")
 }
+
 #[get("/food")]
 async fn food() -> impl Responder {
     let meal = make_reqwest().await;
