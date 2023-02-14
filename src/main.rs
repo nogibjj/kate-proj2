@@ -10,7 +10,7 @@ async fn food() -> impl Responder {
     let meal = make_reqwest().await;
     // print_dictionary(dictionary);
  //http response with mealname
-    HttpResponse::Ok().body(meal["mealname"].to_string()+meal["mealname"])
+    HttpResponse::Ok().body(meal["mealname"].to_string())
 }
 
 #[actix_web::main]
