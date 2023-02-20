@@ -6,15 +6,17 @@
 My project 2 is a Rust Microservice that randomly generates recipes and helps users decide what to eat for dinner. This project is based on actix and a free food API called TheMealDB.
 
 ## Example
-
+![/](0.png "/").
+![/meal](1.png "/meal").
+![/duke](2.png "/duke").
 
 ## How to use
-* `"/"`: the root directory, displays the message "What to eat for dinner?"
-* `"/meal"`: randomly generates a recipe json. There are many details to the recipe, including: mealname, ingredients, measures of ingredients, instructions, an image, youtube tutorial, meal category, origin country, etc.
+* `"/"`: The root directory, displays the message "What to eat for dinner?"
+* `"/meal"`: Randomly generates a recipe json. There are many details to the recipe, including: mealname, ingredients, measures of ingredients, instructions, an image, youtube tutorial, meal category, origin country, etc.
+* `/duke`: If you are a Duke student, you can use this link to get a random dining place at Broadhead Center and Bryan Center.
 
 ## Future Work
-* Add more options and links
-* Kubernetes
+* Deploy on Kubernetes
 
 ## References
 * [TheMealDB](https://www.themealdb.com/)
