@@ -6,9 +6,9 @@
 My project 2 is a Rust Microservice that randomly generates recipes and helps users decide what to eat for dinner. This project is based on actix and a free food API called TheMealDB.
 
 ## Example
-![/](0.png "/").
-![/meal](1.png "/meal").
-![/duke](2.png "/duke").
+![/](0.png "/")
+![/meal](1.png "/meal")
+![/duke](2.png "/duke")
 
 ## How to use
 * `"/"`: The root directory, displays the message "What to eat for dinner?"
